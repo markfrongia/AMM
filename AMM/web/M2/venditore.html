@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pagina Venditore</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Marco Frongia">
+        <meta name="keywords" content="videogiochi, ps4, wiiu, xboxone, vendita">
+    </head>
+    <body>
+        <nav>
+            <a href="descrizione.html">Descrizione sito</a>
+            <a href="login.html">Pagina Login</a>
+        </nav>
+        <div>
+            <form action="aggiungiprodotto.php" method="get">
+                <label for="Nome">Nome dell'Oggetto</label>
+                <input type="text" name="Nome"
+                       id="Nome" value="Nome oggetto" />
+                <br />
+
+                <label for="Urlimage">Url immagine decrittiva</label>
+                <input type="text" name="Urlimage"
+                       id="Urlimage" value="Link immagine" />
+                <br />
+
+                <label for="Descrizione">Descrizione</label>
+                <textarea name="Descrizione" id="Descrizione" 
+                          rows="10" cols="40">Descrizione dell'oggetto</textarea>
+                <br />
+
+                <label for="Prezzo">Prezzo</label>
+                <input type="number" name="Prezzo" id="Prezzo"/>
+                <br />
+
+                <label for="Quantita">Quantita</label>
+                <input type="number" name="Quantita" id="Quantita"/>
+                <br />
+                
+                <input type="submit" value="Invia">
+                <input type="reset" value="Cancella">
+            </form>        
+        </div>
+    </body>
+</html>
