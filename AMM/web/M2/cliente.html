@@ -1,72 +1,84 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Pagina Cliente</title>
+        <title>Negozio Videogiochi</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Marco Frongia">
         <meta name="keywords" content="videogiochi, ps4, wiiu, xboxone, vendita">
+        <meta name="description" content="sito vendita videogiochi">
+        <link href="style.css" rel="stylesheet" type="text/css" media="screen">
     </head>
     <body>
-        <nav>
+        <header>
+            <h1>Sito<br>Vendita<br>Videogiochi</h1>
+            <p>Sito specializzato nella vendita di videogiochi per le console di nuova generazione</p>
+            <nav>
             <a href="descrizione.html">Descrizione sito</a>
-            <a href="login.html">Pagina Login</a>
-        </nav>
-        <div>
+            <a href="cliente.html">Pagina Cliente</a>
+            <a href="venditore.html">Pagina Venditore</a>
+            </nav>
+        </header>
+        
+        <div id="content">
             <table>
                 <tr>
                     <th>Nome Oggetto</th>
-                    <th>Descrizione</th>
-                    <th>Foto</th>
-                    <th>Quantità pezzi disponibili</th>
+                    <th class="hd">Descrizione</th>
+                    <th class="sd">Foto</th>
+                    <th>Quantità</th>
                     <th>Prezzo</th>
                     <th>Operazioni</th>
                 </tr>
                 <tr>
-                    <td>Uncharted 4 PS4</td>
-                    <td>Uncharted 4: Fine di un ladro è un videogioco d'azione-avventura in terza persona pubblicato da Sony Computer Entertainment, in sviluppo da Naughty Dog in esclusiva per PlayStation 4. È il quarto e ultimo capitolo della serie Uncharted, ultimo con protagonista Nathan Drake e verrà pubblicato il 10 maggio 2016</td>
-                    <td><img src='image/uncharted4.jpg' alt='uncharted 4 cover' width="120" height="141"></td>
+                    <td class="titolo">Uncharted 4 PS4</td>
+                    <td class="hd">Uncharted 4: Fine di un ladro è un videogioco d'azione-avventura in terza persona pubblicato da Sony Computer Entertainment, in sviluppo da Naughty Dog in esclusiva per PlayStation 4. È il quarto e ultimo capitolo della serie Uncharted, ultimo con protagonista Nathan Drake e verrà pubblicato il 10 maggio 2016</td>
+                    <td class="sd"><img src='image/uncharted4.jpg' alt='uncharted 4 cover' width="120" height="141"></td>
                     <td>24</td>
                     <td>70 euro</td>
                     <td><a href="cliente.html">Aggiungi al carrello</a></td>
                 </tr>
                 <tr>
-                    <td>Gran Turismo Sport PS4</td>
-                    <td>Gran Turismo Sport è un futuro videogioco di guida sviluppato da Polyphony Digital in corso di sviluppo per la console PlayStation 4.
+                    <td class="titolo">Gran Turismo Sport PS4</td>
+                    <td class="hd">Gran Turismo Sport è un futuro videogioco di guida sviluppato da Polyphony Digital in corso di sviluppo per la console PlayStation 4.
                         Annunciato durante l'edizione del 2015 della Paris Games Week a Parigi, si tratta del settimo capitolo principale della serie Gran Turismo in uscita nel corso del 2016</td>
-                    <td><img src='image/granturismo.jpg' alt='gran turismo cover' width="120" height="141"></td>
+                    <td class="sd"><img src='image/granturismo.jpg' alt='gran turismo cover' width="120" height="141"></td>
                     <td>26</td>
                     <td>70 euro</td>
                     <td><a href="cliente.html">Aggiungi al carrello</a></td>
                 </tr>
                 <tr>
-                    <td>Last of Us Remastered PS4</td>
-                    <td>The Last of Us è un videogioco in stile avventura dinamica di sopravvivenza a sfondo post-apocalittico, sviluppato dalla casa di produzione Naughty Dog, in esclusiva per PlayStation 3 e PlayStation 4.Il 9 aprile 2014 viene annunciata sul PlayStation Blog ufficiale una versione del gioco "rimasterizzata" per PlayStation 4, intitolata The Last of Us Remastered. Presenta texture più definite, luci e ombre migliorate, una risoluzione nativa di 1080p, 60 frame al secondo, un documentario sulle cinematiche di gioco e tutti i contenuti scaricabili inclusi. La sua uscita è avvenuta il 29 luglio 2014.</td>
-                    <td><img src='image/lastofus.jpg' alt='last of us cover' width="120" height="141"></td>
+                    <td class="titolo">Last of Us Remastered PS4</td>
+                    <td class="hd">The Last of Us è un videogioco in stile avventura dinamica di sopravvivenza a sfondo post-apocalittico, sviluppato dalla casa di produzione Naughty Dog, in esclusiva per PlayStation 3 e PlayStation 4.Il 9 aprile 2014 viene annunciata sul PlayStation Blog ufficiale una versione del gioco "rimasterizzata" per PlayStation 4, intitolata The Last of Us Remastered. Presenta texture più definite, luci e ombre migliorate, una risoluzione nativa di 1080p, 60 frame al secondo, un documentario sulle cinematiche di gioco e tutti i contenuti scaricabili inclusi. La sua uscita è avvenuta il 29 luglio 2014.</td>
+                    <td class="sd"><img src='image/lastofus.jpg' alt='last of us cover' width="120" height="141"></td>
                     <td>20</td>
                     <td>40 euro</td>
                     <td><a href="cliente.html">Aggiungi al carrello</a></td>
                 </tr>
                 <tr>
-                    <td>Mario Kart 8 WiiU</td>
-                    <td>Mario Kart 8 è un videogioco di genere simulatore di guida sviluppato e pubblicato da Nintendo per Nintendo Wii U, ottavo della serie Mario Kart.
+                    <td class="titolo">Mario Kart 8 WiiU</td>
+                    <td class="hd">Mario Kart 8 è un videogioco di genere simulatore di guida sviluppato e pubblicato da Nintendo per Nintendo Wii U, ottavo della serie Mario Kart.
                         Questo è il primo Mario Kart in HD, uscito il 28 maggio 2014.[2] Fanno ritorno le moto di Mario Kart Wii, assenti in Mario Kart 7. Si può andare sott'acqua, volare e raccogliere fino 10 monete come nel capitolo per Nintendo 3DS. La novità principale è il fatto che, in alcune piste, si può correre sottosopra o sui muri, sfidando la gravità. Nel mese di maggio 2014 Nintendo ha inoltre annunciato delle app ed applicazioni mobili dedicate al gioco.</td>
-                    <td><img src='image/mariokart.jpg' alt='mario kart 8 cover' width="120" height="141"></td>
+                    <td class="sd"><img src='image/mariokart.jpg' alt='mario kart 8 cover' width="120" height="141"></td>
                     <td>12</td>
                     <td>30 euro</td>
                     <td><a href="cliente.html">Aggiungi al carrello</a></td>
                 </tr>
                 <tr>
-                    <td>Quantum Break XboxOne</td>
-                    <td>Quantum Break è un videogioco sviluppato da Remedy Entertainment e pubblicato da Microsoft Game Studios in esclusiva su Xbox One e Microsoft Windows 10, previsto per il 5 aprile 2016. Inoltre, è in produzione una serie TV chiamata appunto Quantum Break, che sarà inclusa nel gioco, in cui gli spettatori vedranno le vicende del gioco dal punto di vista dei nemici.</td>
-                    <td><img src='image/quantumbreak.jpg' alt='quantum break cover' width="120" height="141"></td>
+                    <td class="titolo">Quantum Break XboxOne</td>
+                    <td class="hd">Quantum Break è un videogioco sviluppato da Remedy Entertainment e pubblicato da Microsoft Game Studios in esclusiva su Xbox One e Microsoft Windows 10, previsto per il 5 aprile 2016. Inoltre, è in produzione una serie TV chiamata appunto Quantum Break, che sarà inclusa nel gioco, in cui gli spettatori vedranno le vicende del gioco dal punto di vista dei nemici.</td>
+                    <td class="sd"><img src='image/quantumbreak.jpg' alt='quantum break cover' width="120" height="141"></td>
                     <td>25</td>
                     <td>60 euro</td>
                     <td><a href="cliente.html">Aggiungi al carrello</a></td>
                 </tr>
             </table>
-
         </div>
-
+            <div style="clear: both; width: 0px; height: 0px;"></div>
+            <footer>   
+                   <p>
+                       Marco Frongia 65083 frongia.marco@gmail.com 
+                   </p>
+            </footer>
     </body>
 </html>

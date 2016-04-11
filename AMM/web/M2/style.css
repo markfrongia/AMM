@@ -1,0 +1,685 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05-apr-2016, 21.22.59
+    Author     : Marco Frongia
+*/
+
+body
+{
+    background-color: white;
+    background-size: 100%;
+    display: block;
+    color: black;
+    font-family: Perpetua, serif;
+}
+
+h1
+{
+    font-size: 35px;
+    color: red;
+    font-weight: bold;
+}
+
+h2
+{
+    font-size: 25px;
+    color: black;
+    font-style: italic;
+}
+
+h3
+{
+    font-size: 20px;
+    color: #696969;
+    font-style: inherit;
+}
+
+a
+{
+    color:black;
+    text-decoration: none;
+}
+
+a:hover
+{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 1024px)
+{
+    header
+    {
+        position: absolute;
+        text-align: right;
+        background-color: white;
+        width: 100%;
+        height: 150px;
+        top: 30px;
+        left: 0;
+        border-top: 1px solid #d2d2d2;
+        border-bottom: 1px solid #d2d2d2;
+        position:relative;
+    }
+
+    table 
+    {
+        border: 1px solid #d2d2d2;
+    }
+
+    table th
+    {
+        font-weight: bold;
+        font-style: italic;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    table tr:nth-child(odd)
+    {
+        background-color: #d4d4d4;
+        color: white;
+    }
+
+    table tr:nth-child(even)
+    {
+        background-color: #ececec;
+    }
+
+    table td
+    {
+        color: black;
+        text-align: center;
+    }
+
+    table a{
+        font-weight: bold;
+        font-family: 'proxima_nova_ltregular', Helvetica Neue, Helvetica, Arial, sans-serif;
+
+    }
+
+    table td.titolo{
+        font-weight: bold;
+
+    }
+
+    header h1
+    {
+
+        position: absolute;
+        text-transform: uppercase;
+        font-family: 'proxima_nova_ltregular', Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        left: 30px;
+        margin-top: 30px;
+        font-size: 30px;
+        color: #005c99;
+        text-align: left;
+        padding: 0px;
+        background:white;
+        width: 200px;
+        border-width: 2px;
+        border-style: solid;
+        border: 1px solid #d2d2d2;
+        box-shadow: 0 0 5px 0 #999;
+        padding: 20px;
+    }
+
+    header p{
+
+        position: relative;
+        right: 30px;
+        font-size: 25px;
+        color: black;
+        font-style: italic;
+    }
+
+    header ul
+    {
+        display: block;
+    }
+
+    header li
+    {
+        display: inline-block;
+        padding-left: 40px;
+        font-size: 30px;
+    }
+
+    body
+    {
+        background-color: white;
+        position: relative;
+        width: 64.000em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+    }
+
+    #sidebar 
+    {
+        padding-top: 20px;
+        top: 120px;
+        float: left;
+        width: 280px;
+        padding-bottom: auto;
+        margin-top: 70px; 
+    }
+
+    #sidebar ul
+    {
+        list-style: none;
+    }
+
+    #sidebar li
+    {  
+        position: relative;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 200%;
+        padding-right: 10px;
+        border-bottom: 1px solid #F2F2F2;
+        font-family: 'proxima_nova_ltregular', Helvetica Neue, Helvetica, Arial, sans-serif;
+        line-height: 40px;
+        color: #000;
+    }
+
+    form {
+        display: block;
+    }
+
+    label {
+        clear: both;
+        width: 50%;
+        font-size:20px;
+        display: inline-block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        margin-bottom:30px;
+    }
+
+    form input{
+        width: 150px; 
+        padding: 8px;
+        border: 1px solid #d2d2d2;
+    }
+
+    form input.tasto{
+        color:white;
+        background-color: #b2b2b2;
+        border: 1px solid #b5b5b5;
+    }
+
+    #content 
+    {
+        width: 724px;
+        background-color: white;
+        position: relative;
+        margin-top: 50px; 
+        margin-left: auto;
+        padding-bottom: 5px;
+        padding-right: -15px;
+        bottom: 0; 
+    }
+
+    #content ul
+    {
+        list-style: none;
+    }
+
+    nav
+    {
+        margin-top:70px;
+        text-align: right;    
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 25px;  
+    }
+
+
+    nav a
+    {    
+        margin-left: 30px;    
+        font-family: 'proxima_nova_ltregular', Helvetica Neue, Helvetica, Arial, sans-serif;
+        color:#005c99;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    footer
+    {
+        border-top: 1px solid #d2d2d2;
+        position: relative;
+        font-size: 13px;
+        text-transform: uppercase;
+        width: 100%;
+        bottom: -10px;
+    }  
+
+
+    label::after, label::before
+    {
+        content: '\A';
+        white-space: pre;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1024px)
+{
+    header
+    {
+        position: absolute;
+        text-align: right;
+        background-color: white;
+        width: 100%;
+        height: 150px;
+        top: 30px;
+        left: 0;
+        border-top: 1px solid #d2d2d2;
+        border-bottom: 1px solid #d2d2d2;
+        position:relative;
+    }
+
+    table 
+    {
+        border: 1px solid #d2d2d2;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    table th
+    {
+        font-weight: bold;
+        font-style: italic;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    table tr:nth-child(odd)
+    {
+        background-color: #d4d4d4;
+        color: white;
+    }
+
+    table tr:nth-child(even)
+    {
+        background-color: #ececec;
+    }
+
+    table td
+    {
+        color: black;
+        text-align: center;
+    }
+      
+    
+    table th.hd{
+        display: none;        
+    }
+
+    table a{
+        font-weight: bold;
+        font-family: 'proxima_nova_ltregular', Helvetica Neue, Helvetica, Arial, sans-serif;
+
+    }
+
+    table td.titolo{
+        font-weight: bold;
+
+    }
+    
+    
+    
+    table td.hd{
+        display: none;        
+    }
+
+    header h1
+    {
+
+        position: absolute;
+        text-transform: uppercase;
+        font-family: 'proxima_nova_ltregular', Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        left: 10px;
+        margin-top: 30px;
+        font-size: 30px;
+        color: #005c99;
+        text-align: left;
+        padding: 0px;
+        background:white;
+        width: 200px;
+        border-width: 2px;
+        border-style: solid;
+        border: 1px solid #d2d2d2;
+        box-shadow: 0 0 5px 0 #999;
+        padding: 20px;
+    }
+
+    header p{
+        position:absolute;
+        left: 280px;
+        padding-top:10px;
+        padding-right:3px;
+        font-size: 25px;
+        text-align: left;
+        color: black;
+        font-style: italic;
+    }
+
+    header ul
+    {
+        display: block;
+    }
+
+    header li
+    {
+        display: inline-block;
+        padding-left: 40px;
+        font-size: 30px;
+    }
+
+    body
+    {
+        background-color: white;
+        position: relative;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+    }
+
+    #sidebar 
+    {
+        display: none;
+    }
+
+    form {
+        display: block;
+    }
+
+    label {
+        clear: both;
+        width: 50%;
+        font-size:20px;
+        display: inline-block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        margin-bottom:30px;
+    }
+
+    form input{
+        width: 150px; 
+        padding: 8px;
+        border: 1px solid #d2d2d2;
+    }
+
+    form input.tasto{
+        color:white;
+        background-color: #b2b2b2;
+        border: 1px solid #b5b5b5;
+    }
+
+    #content 
+    {
+        width: 80%;
+        background-color: white;
+        position: relative;
+        margin-top: 120px; 
+        padding-bottom: 5px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #content ul
+    {
+        list-style: none;
+    }
+
+    nav
+    {
+        margin-top:190px;
+        text-align: center;    
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 25px; 
+        border-bottom: 1px solid #d2d2d2; 
+    }
+
+
+    nav a
+    {    
+        padding-left: 30px;    
+        font-family: 'proxima_nova_ltregular', Helvetica Neue, Helvetica, Arial, sans-serif;
+        color:#005c99;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    footer
+    {
+        border-top: 1px solid #d2d2d2;
+        position: relative;
+        font-size: 13px;
+        text-transform: uppercase;
+        padding-left: 2%;
+        width: 98%;
+        bottom: -10px;
+    }  
+
+
+    label::after, label::before
+    {
+        content: '\A';
+        white-space: pre;
+    }
+}
+
+@media only screen and (max-width: 480px)
+{
+    header
+    {
+        text-align: right;
+        background-color: white;
+        width: 100%;
+        top: 30px;
+        left: 0;
+        border-top: 1px solid #d2d2d2;
+    }
+
+    table 
+    {
+        border: 1px solid #d2d2d2;
+    }
+
+    table th
+    {
+        font-weight: bold;
+        font-style: italic;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    table th.sd{
+        display: none;        
+    }
+    
+    table th.hd{
+        display: none;        
+    }
+
+    table tr:nth-child(odd)
+    {
+        background-color: #d4d4d4;
+        color: white;
+    }
+
+    table tr:nth-child(even)
+    {
+        background-color: #ececec;
+    }
+
+    table td
+    {
+        color: black;
+        text-align: center;
+    } 
+
+    table td.sd{
+        display: none;        
+    }
+
+    table td.hd{
+        display: none;        
+    }
+
+    table a{
+        font-weight: bold;
+        font-family: 'proxima_nova_ltregular', Helvetica Neue, Helvetica, Arial, sans-serif;
+
+    }
+
+    table td.titolo{
+        font-weight: bold;
+
+    }
+
+    header h1
+    {
+
+        text-transform: uppercase;
+        font-family: 'proxima_nova_ltregular', Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        left: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        font-size: 30px;
+        color: #005c99;
+        text-align: left;
+        padding: 0px;
+        background:white;
+        width: 200px;
+        border-width: 2px;
+        border-style: solid;
+        border: 1px solid #d2d2d2;
+        box-shadow: 0 0 5px 0 #999;
+        padding: 20px;
+    }
+
+    header p{
+        margin-top:20px;
+        font-size: 25px;
+        color: black;
+        font-style: italic;
+        padding:10px;
+        border-bottom: 1px solid #d2d2d2;
+        margin-bottom: 0px;
+    }
+
+    header ul
+    {
+        display: block;
+    }
+
+    header li
+    {
+        display: inline-block;
+        padding-left: 40px;
+        font-size: 30px;
+    }
+
+    body
+    {
+        background-color: white;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+    }
+
+    #sidebar 
+    {
+        display: none;
+    }
+
+    form {
+        display: block;
+    }
+
+    label {
+        clear: both;
+        width: 50%;
+        font-size:20px;
+        display: inline-block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        margin-bottom:30px;
+    }
+
+    form input{
+        width: 150px; 
+        padding: 8px;
+        border: 1px solid #d2d2d2;
+    }
+
+    form input.tasto{
+        color:white;
+        background-color: #b2b2b2;
+        border: 1px solid #b5b5b5;
+    }
+
+    #content 
+    {
+        width: 98%;
+        background-color: white;
+        margin-top: 20px; 
+        margin-left: 1%;
+        padding-bottom: 5px;
+        bottom: 0;  
+    }
+
+    #content ul
+    {
+        list-style: none;
+    }
+
+    nav
+    {  
+        border-bottom: 1px solid #d2d2d2; 
+    }
+
+
+    nav a
+    {    
+        margin-right: 10px;    
+        font-family: 'proxima_nova_ltregular', Helvetica Neue, Helvetica, Arial, sans-serif;
+        color:#005c99;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    footer
+    {
+        padding-left: 2%;
+        border-top: 1px solid #d2d2d2;
+        font-size: 13px;
+        text-transform: uppercase;
+        width: 98%;
+        bottom: -10px;
+    }  
+
+
+    label::after, label::before
+    {
+        content: '\A';
+        white-space: pre;
+    }
+}

@@ -1,30 +1,43 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Pagina Login</title>
+        <title>Negozio Videogiochi</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Marco Frongia">
         <meta name="keywords" content="videogiochi, ps4, wiiu, xboxone, vendita">
+        <meta name="description" content="sito vendita videogiochi">
+        <link href="style.css" rel="stylesheet" type="text/css" media="screen">
     </head>
     <body>
-        <nav>
+        <header>
+            <h1>Sito<br>Vendita<br>Videogiochi</h1>
+            <p>Sito specializzato nella vendita di videogiochi per le console di nuova generazione</p>
+            <nav>
             <a href="descrizione.html">Descrizione sito</a>
             <a href="cliente.html">Pagina Cliente</a>
             <a href="venditore.html">Pagina Venditore</a>
-        </nav>
-        <div>
+            </nav>
+        </header>
+        
+        <div id="content">
             <form action="login.php" method="get">
                 <label for="nomeutente">Nome Utente</label>
                 <input type="text" name="nomeutente"
-                       id="nomeutente" value="nome utente" />
+                       id="nomeutente" placeholder="Digita il tuo nome utente" />
                 <a href="login.html"></a>
                 <br />
                 <label for="password">Password</label>
                 <input type="password" name="password” "
-                       id="password" value="oscurato" />
-                <input type="submit" value="Accedi">
+                       id="password" placeholder="Digita la tua password" />
+                <input class="tasto" type="submit" value="Accedi">
             </form>
         </div>
+            <div style="clear: both; width: 0px; height: 0px;"></div>
+            <footer>   
+                   <p>
+                       Marco Frongia 65083 frongia.marco@gmail.com 
+                   </p>
+            </footer>
     </body>
 </html>

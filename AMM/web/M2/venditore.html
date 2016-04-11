@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Pagina Venditore</title>
+        <title>Negozio Videogiochi</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Marco Frongia">
         <meta name="keywords" content="videogiochi, ps4, wiiu, xboxone, vendita">
+        <meta name="description" content="sito vendita videogiochi">
+        <link href="style.css" rel="stylesheet" type="text/css" media="screen">
     </head>
     <body>
-        <nav>
+        <header>
+            <h1>Sito<br>Vendita<br>Videogiochi</h1>
+            <p>Sito specializzato nella vendita di videogiochi per le console di nuova generazione</p>
+            <nav>
             <a href="descrizione.html">Descrizione sito</a>
-            <a href="login.html">Pagina Login</a>
-        </nav>
-        <div>
+            <a href="cliente.html">Pagina Cliente</a>
+            <a href="venditore.html">Pagina Venditore</a>
+            </nav>
+        </header>
+                        
+        
+        
+        <div id="content">
             <form action="aggiungiprodotto.php" method="get">
                 <label for="Nome">Nome dell'Oggetto</label>
                 <input type="text" name="Nome"
-                       id="Nome" value="Nome oggetto" />
-                <br />
+                       id="Nome" placeholder="Nome oggetto" />
 
                 <label for="Urlimage">Url immagine decrittiva</label>
                 <input type="text" name="Urlimage"
-                       id="Urlimage" value="Link immagine" />
+                       id="Urlimage" placeholder="Link immagine" />
                 <br />
-
-                <label for="Descrizione">Descrizione</label>
-                <textarea name="Descrizione" id="Descrizione" 
-                          rows="10" cols="40">Descrizione dell'oggetto</textarea>
-                <br />
-
+                
                 <label for="Prezzo">Prezzo</label>
                 <input type="number" name="Prezzo" id="Prezzo"/>
-                <br />
 
                 <label for="Quantita">Quantita</label>
                 <input type="number" name="Quantita" id="Quantita"/>
                 <br />
+
+                <label for="Descrizione">Descrizione</label>
+                <textarea name="Descrizione" id="Descrizione" 
+                          rows="10" cols="40"></textarea>
+                <br />
                 
-                <input type="submit" value="Invia">
-                <input type="reset" value="Cancella">
-            </form>        
+                <input class="tasto" type="submit" value="Invia">
+                <input class="tasto" type="reset" value="Cancella">
+            </form>    
         </div>
+            <footer>   
+                   <p>
+                       Marco Frongia 65083 frongia.marco@gmail.com 
+                   </p>
+            </footer>
     </body>
 </html>
